@@ -1,0 +1,38 @@
+@media print{
+    img{
+        display: none;
+    }
+    *{
+        background-color: white;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+        font-size: 12px;
+    }
+    h1,h2,h3,h4{
+        text-align: center;
+        
+    }
+    iframe{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    textarea{
+        display: none;
+    }
+    video{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    form{
+        display: none;
+    }
+    
+}

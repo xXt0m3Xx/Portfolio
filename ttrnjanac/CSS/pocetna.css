@@ -1,0 +1,29 @@
+#slika1{
+    width: 100%;
+    height: 40%;
+}
+.flexbox-container{
+    display: flex;
+}
+.flexbox-item1{
+    width: 25%;
+}
+.flexbox-item2{
+    width: 25%;
+}
+.flexbox-item3{
+    width: 50%;
+
+}
+#slika4{
+    width: 100%;
+}
+#video{
+    position: relative;
+    left: 35%;
+    margin-top: 5%;
+}
+
+
+
+

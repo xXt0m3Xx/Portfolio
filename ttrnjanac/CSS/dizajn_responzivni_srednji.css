@@ -1,0 +1,21 @@
+@media  only screen and (max-width: 1024px){
+    .flexbox-container{
+        display: block;
+    }
+    #video{
+        position: relative;
+        left: 0;
+        width: 90%;
+    }
+    .blockslike{
+        display: block;
+    }
+    .blockvideo{
+        display: block;
+    }
+    #tema{
+        width: 80%;
+        display: block;
+    }
+    
+}
