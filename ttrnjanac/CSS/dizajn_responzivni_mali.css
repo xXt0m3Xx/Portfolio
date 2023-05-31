@@ -1,0 +1,42 @@
+@media   screen and (max-width: 400px) {
+    .flexbox-container{
+        display: block;
+    }
+    #video{
+        position: relative;
+        left: 0;
+        width: 90%;
+    }
+    .blockslike{
+        display: block;
+    }
+    .blockvideo{
+        display: block;
+    }
+   .prioritet-4{
+    display: none;
+   }
+   .prioritet-5{
+    display: none;
+   }
+   #Komentar{
+    width: 80%;
+   }
+   #tema{
+    width: 80%;
+    display: block;
+   }
+   .blok{
+    display: block;
+   }
+   img{
+    width: auto;
+   }
+   #drzava{
+    width: 80%;
+   }
+   iframe{
+    width: 20px;
+   }
+   
+}
