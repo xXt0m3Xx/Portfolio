@@ -1,0 +1,196 @@
+body{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    font-family: 'Tilt Prism', cursive;
+}
+nav{
+    background-color: rgb(248, 0, 0);
+    text-align: center;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 16px;
+    padding-right: 15px;
+    color: white;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    transition: 0.2s;
+    color: aqua;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.hero{
+    padding-top: 130px;
+}
+
+.hero img{
+    border-style: none;
+    border-radius: 10%;
+    margin: 0 auto;
+    max-width: 440px;
+    display: block;
+    height: 500px;
+    width: 500px;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0px 100px;
+}
+
+.aboutme{
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 40px 50px 70px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 0px rgb(0 0 0 / 40%), -10px -10px 0px rgb(255 114 114 / 80%);
+}
+
+.aboutme-section{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.aboutme-image{
+    height: 450px;
+    width: 400px;
+    background-image: url(sah.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutme-text{
+    height: auto;
+    width: 40%;
+    margin-left: 40px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+#projects{
+    padding: 5px;
+    margin: 5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+#projects h2{
+    color: white;
+}
+
+.cod-project{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    background-image: url(callofduty.jpg);
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.fun-project{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    background-image: url(logo.png);
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text:hover{
+    height: 175px;
+    transition: 0.3s;
+}
+
+.text h3{
+    margin-top: 3px;
+}
+
+.content{
+    color: black;
+}
+
+.button{
+    border: 5px solid lightblue;
+    border-radius: 10px;
+    width: 160px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,74 @@
+figure img{
+    width: 250px;
+}
+figure img:hover{
+    width: 450px;
+}
+#Komentar{
+    width: 100%;
+}
+#Citat{
+    width: 100%;
+}
+.blockslike{
+    display: flex;
+}
+.blockvideo{
+    display: flex;
+    
+}
+
+.container1{
+    margin: 10px;
+    width: 320px;
+  
+}
+.container1:hover{
+    box-shadow: 10px 10px grey;
+}
+
+ th, td{
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+}
+
+thead{
+    background-color: rgb(86, 173, 35);
+}
+.neparni{
+    color: rgb(0, 0, 0);
+    background-color: lightgreen;
+}
+tfoot{
+    text-align: center;
+    background-color: rgb(86, 173, 35);
+}
+
+.naslov2{
+    color: rgb(86, 173, 35);;
+}
+
+.odlomak{
+    background-color: grey;
+    padding: 20px 10px 20px 10px;
+}
+
+.nlista{
+    background-color: grey;
+}
+
+.citat{
+    background-color: grey;
+    padding: 10px
+}
+.broj{
+    background-color: grey;
+    padding: 10px;
+}
+#prvaobjava{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(86, 173, 35);;
+}

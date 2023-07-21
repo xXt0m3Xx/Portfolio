@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+}
+#pozadina{
+    width: 90%;
+    height: 100%;
+    opacity: 3%;
+    position: fixed;
+    top: 0;
+    right: 25px;
+    z-index: -1;
+    
+}
+.meni{
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(252, 176, 35);
+    margin-bottom: 10px;
+}
+header{
+    text-align: right;
+    margin: 5px;
+}
+#navigacija a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+p{
+    text-align: center;
+    font-size: larger;
+}
+body{
+    text-align: center;
+    
+}
+#kreiranje div input{
+     margin: 5px;
+}
+table{
+    background-color: rgb(252, 176, 35);
+}
+table,td{
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    border-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+th{
+    padding: 10px;
+    border-radius: 25px
+    
+}
+#navigacija a:hover{
+    color: rgb(252, 176, 35);
+}
+#paginacija{
+    text-align: center;
+}
+#paginacija a{
+    
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+}
+#paginacija a:hover{
+    color: rgb(252, 176, 35);
+}
+tr:hover{
+    background-color: lightcoral;
+}
+.link{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: orange;
+}
+.boja-reda {
+    background-color: gray; 
+    color: white;
+}

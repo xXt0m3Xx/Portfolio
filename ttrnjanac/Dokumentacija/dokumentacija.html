@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+	<title>Dokumentacija</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Tome Trnjanac">
+	<meta name="vrijeme" content="15:03">
+	<meta name="kljucneRijeci" content="CallofWar, Warzone, Treyarch">
+	<link rel="stylesheet" href="../CSS/dizajn.css">
+	<link rel="stylesheet" href="../CSS/dokumentacija.css">
+	<link rel="stylesheet" media="screen and (max-width: 400px)" href="../CSS/dizajn_responzivni_mali.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" href="../CSS/dizajn_responzivni_srednji.css">
+	<link rel="stylesheet" href="../CSS/dizajn_ispis.css" media="print">
+	
+</head>
+<body>
+<header>
+	<a href="../index.html">
+		<img src="../Dokumenti/Slike/Logo.jpg" alt="">
+		</a>
+	<h1> <a href="../index.html">Call of Duty</a></h1>
+	
+	<nav>
+		<a href="../index.html">Početna</a>
+		<a href="o_autoru.html">O autoru</a>
+		<a href="dokumentacija.html">Dokumentacija</a>
+	</nav>
+</header>
+<h2 class="glavninaslov">Dokumentacija</h2>
+
+
+	<ul>
+		<li><a href="../index.html">Početna</a> </li>
+		<li><a href="o_autoru.html">O autoru</a> </li>
+		<li><a href="#obrazacZaForum"> Obrazac za forum</a></li>
+		<li><a href="#obrazacZaPretraživanje"> Obrazac za pretraživanje foruma</a></li>
+		<li><a href="#vlastitiObrazac"> Vlastiti obrazac</a></li>
+		<li><a href="#galerijaSlika"> Galerija slika</a></li>
+		<li><a href="#galerijaVidea"> Galerija videa</a></li>
+		<li><a href="#popisProizvoda"> Popis proizvoda</a></li>
+		<li><a href="#interaktivnaSlika"> Interaktivna slika</a></li>
+		<li><a href="#Forum"> Forum </a></li>
+
+	</ul>
+	<div>
+		<hr>
+		<h1 id="obrazacZaForum">Obrazac za forum</h1>
+		<form method="POST" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php">
+
+			<label for="tema">Tema</label>
+			<input type="text" name="tema" id="tema" maxlength="100" size="100">
+			<br>
+			<br>
+			<label for="Komentar">Komentar</label>
+			<textarea id="Komentar" name="Komentar" minlength="50" rows="50" cols="300"></textarea>
+			<br>
+			<label for="kljucneRijeci">Ključne riječi:</label>
+			<br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci" value="Puške">Puške <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci1" value="Battle Pass">Battle Pass <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci2" value="Pregled" checked>Pregled <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci3" value="Igranje">Igranje <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci4" value="Vijesti">Vijesti <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci5" value="Warzone">Warzone <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci6" value="Battle Royale">Battle Royale <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci7" value="DMZ">Meta <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci8" value="Skinovi">Skins <br>
+			<input type="checkbox" name="kljucneRijeci[]" id="kljucneRijeci9" value="Operatori">Operatori <br>
+			<br>
+			<label for="Citat">Citat</label>
+			<textarea id="Citat" name="Citat" maxlength="300" rows="2" cols="300"></textarea>
+			<label for="Iskustvo" class="blok">Iskustvo</label>
+			<input type="number" name="Iskustvo" min="1" max="1024">
+			<br>
+
+			<input type="submit" value="Gumb za slanje podataka">
+		</form>
+	</div>
+	<hr>
+	<div>
+		<h1 id="obrazacZaPretraživanje">Obrazac za pretraživanje foruma</h1>
+		<form method="POST" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php">
+			<input type="text" name="tekst" id="pretraživanje">
+			<br>
+			<select name="pretraživanje_po" id="pretraživanje_po">
+				<option value="naslovi">Traži po naslovu</option>
+				<option value="sadržaji">Traži po sadržaju</option>
+				<option value="autori">Traži po autoru</option>
+			</select>
+			<br>
+			<label for="Korisnici" class="blok">Korisnici:</label>
+			<input type="radio" name="Korisnici" id="Korisnici">Registrirani Korisnici
+			<input type="radio" name="Korisnici1" id="Korisnici1">Svi
+			<br>
+			<input type="submit" value="Poslano">
+		</form>
+	</div>
+	<hr>
+	<div>
+		<h1 id="vlastitiObrazac">Vlastiti obrazac</h1>
+		<form method="post" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php">
+			<fieldset>
+				<legend>Registracija</legend>
+				<label for="korime" class="blok">Korisničko ime:</label>
+				<input type="text" name="korime" id="korime">
+				<br>
+				<label for="lozinka" class="blok">Lozinka</label>
+				<input type="password" name="lozinka" id="lozinka">
+				<br>
+				<label for="email" class="blok">E-mail:</label>
+				<input type="text" name="email" id="email">
+				<br>
+				<label for="godine" class="blok">Datum rođenja:</label>
+				<input type="date" name="Datum rođenja" id="godine">
+				<br>
+				<label for="spol" class="blok">Spol:</label>
+				<input type="radio" name="spol" id="spol">M
+				<input type="radio" name="spol" id="zena">Ž
+				<br>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Call of War</legend>
+				<label for="CallofWar" class="blok">Izaberi najdraži Call od War:</label>
+				<select name="CallofWar" id="CallofWar">
+					<option value="CallofWar">Call of War</option>
+					<option value="CallofWar">Call of War 2</option>
+					<option value="CallofWar">Call of War 3</option>
+					<option value="CallofWar">Call of War 4: Modern Warfare</option>
+					<option value="CallofWar">Call of War: World at War</option>
+					<option value="CallofWar">Call of War: Modern Warfare 2</option>
+					<option value="CallofWar">Call of War: Black Ops</option>
+					<option value="CallofWar">Call of War: Modern Warfare 3</option>
+					<option value="CallofWar">Call of War: Black Ops II</option>
+					<option value="CallofWar">Call of War: Ghosts</option>
+					<option value="CallofWar">Call of War: Advanced Warfare</option>
+					<option value="CallofWar" selected>Call of War: Black Ops III</option>
+					<option value="CallofWar">Call of War: Infinite Warfare</option>
+					<option value="CallofWar">Call of War: WWII </option>
+					<option value="CallofWar">Call of War: Black Ops 4</option>
+					<option value="CallofWar">Call of War: Modern Warfare</option>
+					<option value="CallofWar">Call of War: Black Ops Cold War</option>
+					<option value="CallofWar">Call of War: Vanguard</option>
+					<option value="CallofWar">Call of War: Modern Warfare II</option>
+				</select>
+				<br>
+				<label for="ucestalost" class="blok">Učestalost igranja:</label>
+				<select name="ucestalost" id="ucestalost">
+					<option value="ucestalost">Svaki dan</option>
+					<option value="ucestalost">tri puta tjedno</option>
+					<option value="ucestalost">Jednom tjedno</option>
+					<option value="ucestalost">Jednom mjesečno</option>
+				</select>
+				<br>
+				<label for="Iskustvo" class="blok">Iskustvo</label>
+				<select name="Iskustvo" id="Iskustvo" class="blok">
+					<option value="Iskustvo">Početnik</option>
+					<option value="Iskustvo">Amater</option>
+					<option value="Iskustvo">Advanced</option>
+					<option value="Iskustvo">Profesional</option>
+					<option value="Iskustvo">Master</option>
+				</select>
+				<br>
+				<label for="Platforma" class="blok">Platforma:</label>
+				<input type="radio" name="Platforma" id="Platforma">PC
+				<input type="radio" name="Platforma" id="PS">Playstation
+				<input type="radio" name="Platforma" id="Xbox">Xbox
+				<input type="radio" name="Platforma" id="Nintendo">Nintendo
+				<br>
+				<label for="drzava" class="blok">Država:</label>
+				<select id="drzava" name="drzava">
+					<option value="AF">Afghanistan</option>
+					<option value="AL">Albania</option>
+					<option value="DZ">Algeria</option>
+					<option value="AS">American Samoa</option>
+					<option value="AD">Andorra</option>
+					<option value="AO">Angola</option>
+					<option value="AI">Anguilla</option>
+					<option value="AQ">Antarctica</option>
+					<option value="AG">Antigua and Barbuda</option>
+					<option value="AR">Argentina</option>
+					<option value="AM">Armenia</option>
+					<option value="AW">Aruba</option>
+					<option value="AU">Australia</option>
+					<option value="AT">Austria</option>
+					<option value="AZ">Azerbaijan</option>
+					<option value="BS">Bahamas</option>
+					<option value="BH">Bahrain</option>
+					<option value="BD">Bangladesh</option>
+					<option value="BB">Barbados</option>
+					<option value="BY">Belarus</option>
+					<option value="BE">Belgium</option>
+					<option value="BZ">Belize</option>
+					<option value="BJ">Benin</option>
+					<option value="BM">Bermuda</option>
+					<option value="BT">Bhutan</option>
+					<option value="BO">Bolivia</option>
+					<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+					<option value="BA">Bosnia and Herzegovina</option>
+					<option value="BW">Botswana</option>
+					<option value="BV">Bouvet Island</option>
+					<option value="BR">Brazil</option>
+					<option value="IO">British Indian Ocean Territory</option>
+					<option value="VG">British Virgin Islands</option>
+					<option value="BN">Brunei Darussalam</option>
+					<option value="BG">Bulgaria</option>
+					<option value="BF">Burkina Faso</option>
+					<option value="BI">Burundi</option>
+					<option value="KH">Cambodia</option>
+					<option value="CM">Cameroon</option>
+					<option value="CA">Canada</option>
+					<option value="CV">Cape Verde</option>
+					<option value="KY">Cayman Islands</option>
+					<option value="CF">Central African Republic</option>
+					<option value="TD">Chad</option>
+					<option value="CL">Chile</option>
+					<option value="CN">China</option>
+					<option value="CX">Christmas Island</option>
+					<option value="CC">Cocos (Keeling) Islands</option>
+					<option value="CO">Colombia</option>
+					<option value="KM">Comoros</option>
+					<option value="CG">Congo</option>
+					<option value="CK">Cook Islands</option>
+					<option value="CR">Costa Rica</option>
+					<option value="HR" selected>Croatia</option>
+					<option value="CU">Cuba</option>
+					<option value="CY">Cyprus</option>
+					<option value="CZ">Czech Republic</option>
+					<option value="CI">C&#xF4;te d&#x27;Ivoire</option>
+					<option value="CD">Democratic Republic of the Congo</option>
+					<option value="DK">Denmark</option>
+					<option value="DJ">Djibouti</option>
+					<option value="DM">Dominica</option>
+					<option value="DO">Dominican Republic</option>
+					<option value="EC">Ecuador</option>
+					<option value="EG">Egypt</option>
+					<option value="SV">El Salvador</option>
+					<option value="GQ">Equatorial Guinea</option>
+					<option value="ER">Eritrea</option>
+					<option value="EE">Estonia</option>
+					<option value="ET">Ethiopia</option>
+					<option value="FK">Falkland Islands</option>
+					<option value="FO">Faroe Islands</option>
+					<option value="FM">Federated States of Micronesia</option>
+					<option value="FJ">Fiji</option>
+					<option value="FI">Finland</option>
+					<option value="FR">France</option>
+					<option value="GF">French Guiana</option>
+					<option value="PF">French Polynesia</option>
+					<option value="TF">French Southern Territories</option>
+					<option value="GA">Gabon</option>
+					<option value="GM">Gambia</option>
+					<option value="GE">Georgia</option>
+					<option value="DE">Germany</option>
+					<option value="GH">Ghana</option>
+					<option value="GI">Gibraltar</option>
+					<option value="GR">Greece</option>
+					<option value="GL">Greenland</option>
+					<option value="GD">Grenada</option>
+					<option value="GP">Guadeloupe</option>
+					<option value="GU">Guam</option>
+					<option value="GT">Guatemala</option>
+					<option value="GG">Guernsey</option>
+					<option value="GN">Guinea</option>
+					<option value="GW">Guinea-Bissau</option>
+					<option value="GY">Guyana</option>
+					<option value="HT">Haiti</option>
+					<option value="HM">Heard Island and McDonald Islands</option>
+					<option value="VA">Holy See (Vatican City State)</option>
+					<option value="HN">Honduras</option>
+					<option value="HK">Hong Kong</option>
+					<option value="HU">Hungary</option>
+					<option value="IS">Iceland</option>
+					<option value="IN">India</option>
+					<option value="ID">Indonesia</option>
+					<option value="IR">Iran</option>
+					<option value="IQ">Iraq</option>
+					<option value="IE">Ireland</option>
+					<option value="IM">Isle of Man</option>
+					<option value="IL">Israel</option>
+					<option value="IT">Italy</option>
+					<option value="JM">Jamaica</option>
+					<option value="JP">Japan</option>
+					<option value="JE">Jersey</option>
+					<option value="JO">Jordan</option>
+					<option value="KZ">Kazakhstan</option>
+					<option value="KE">Kenya</option>
+					<option value="KI">Kiribati</option>
+					<option value="XKV">Kosovo</option>
+					<option value="KW">Kuwait</option>
+					<option value="KG">Kyrgyzstan</option>
+					<option value="LA">Laos</option>
+					<option value="LV">Latvia</option>
+					<option value="LB">Lebanon</option>
+					<option value="LS">Lesotho</option>
+					<option value="LR">Liberia</option>
+					<option value="LY">Libya</option>
+					<option value="LI">Liechtenstein</option>
+					<option value="LT">Lithuania</option>
+					<option value="LU">Luxembourg</option>
+					<option value="MO">Macao</option>
+					<option value="MG">Madagascar</option>
+					<option value="MW">Malawi</option>
+					<option value="MY">Malaysia</option>
+					<option value="MV">Maldives</option>
+					<option value="ML">Mali</option>
+					<option value="MT">Malta</option>
+					<option value="MH">Marshall Islands</option>
+					<option value="MQ">Martinique</option>
+					<option value="MR">Mauritania</option>
+					<option value="MU">Mauritius</option>
+					<option value="YT">Mayotte</option>
+					<option value="MX">Mexico</option>
+					<option value="MD">Moldova</option>
+					<option value="MC">Monaco</option>
+					<option value="MN">Mongolia</option>
+					<option value="ME">Montenegro</option>
+					<option value="MS">Montserrat</option>
+					<option value="MA">Morocco</option>
+					<option value="MZ">Mozambique</option>
+					<option value="MM">Myanmar</option>
+					<option value="NA">Namibia</option>
+					<option value="NR">Nauru</option>
+					<option value="NP">Nepal</option>
+					<option value="NL">Netherlands</option>
+					<option value="NC">New Caledonia</option>
+					<option value="NZ">New Zealand</option>
+					<option value="NI">Nicaragua</option>
+					<option value="NE">Niger</option>
+					<option value="NG">Nigeria</option>
+					<option value="NU">Niue</option>
+					<option value="NF">Norfolk Island</option>
+					<option value="KP">North Korea</option>
+					<option value="MP">Northern Mariana Islands</option>
+					<option value="NO">Norway</option>
+					<option value="OM">Oman</option>
+					<option value="PK">Pakistan</option>
+					<option value="PW">Palau</option>
+					<option value="PS">Palestinian Territory</option>
+					<option value="PA">Panama</option>
+					<option value="PG">Papua New Guinea</option>
+					<option value="PY">Paraguay</option>
+					<option value="PE">Peru</option>
+					<option value="PH">Philippines</option>
+					<option value="PN">Pitcairn</option>
+					<option value="PL">Poland</option>
+					<option value="PT">Portugal</option>
+					<option value="PR">Puerto Rico</option>
+					<option value="QA">Qatar</option>
+					<option value="MK">Republic of Macedonia</option>
+					<option value="RO">Romania</option>
+					<option value="RU">Russia</option>
+					<option value="RW">Rwanda</option>
+					<option value="RE">R&#xE9;union</option>
+					<option value="BL">Saint Barth&#xE9;lemy</option>
+					<option value="SH">Saint Helena</option>
+					<option value="KN">Saint Kitts and Nevis</option>
+					<option value="LC">Saint Lucia</option>
+					<option value="MF">Saint Martin (French part)</option>
+					<option value="PM">Saint Pierre and Miquelon</option>
+					<option value="VC">Saint Vincent and the Grenadines</option>
+					<option value="WS">Samoa</option>
+					<option value="SM">San Marino</option>
+					<option value="ST">Sao Tome and Principe</option>
+					<option value="SA">Saudi Arabia</option>
+					<option value="SN">Senegal</option>
+					<option value="RS">Serbia</option>
+					<option value="SC">Seychelles</option>
+					<option value="SL">Sierra Leone</option>
+					<option value="SG">Singapore</option>
+					<option value="SK">Slovakia</option>
+					<option value="SI">Slovenia</option>
+					<option value="SB">Solomon Islands</option>
+					<option value="SO">Somalia</option>
+					<option value="ZA">South Africa</option>
+					<option value="GS">South Georgia and the South Sandwich Islands</option>
+					<option value="KR">South Korea</option>
+					<option value="ES">Spain</option>
+					<option value="LK">Sri Lanka</option>
+					<option value="SD">Sudan</option>
+					<option value="SR">Suriname</option>
+					<option value="SJ">Svalbard and Jan Mayen</option>
+					<option value="SZ">Swaziland</option>
+					<option value="SE">Sweden</option>
+					<option value="CH">Switzerland</option>
+					<option value="SY">Syria</option>
+					<option value="TW">Taiwan</option>
+					<option value="TJ">Tajikistan</option>
+					<option value="TZ">Tanzania</option>
+					<option value="TH">Thailand</option>
+					<option value="TL">Timor-Leste</option>
+					<option value="TG">Togo</option>
+					<option value="TK">Tokelau</option>
+					<option value="TO">Tonga</option>
+					<option value="TT">Trinidad and Tobago</option>
+					<option value="TN">Tunisia</option>
+					<option value="TR">Turkey</option>
+					<option value="TM">Turkmenistan</option>
+					<option value="TC">Turks and Caicos Islands</option>
+					<option value="TV">Tuvalu</option>
+					<option value="VI">U.S. Virgin Islands</option>
+					<option value="UG">Uganda</option>
+					<option value="UA">Ukraine</option>
+					<option value="AE">United Arab Emirates</option>
+					<option value="GB">United Kingdom</option>
+					<option value="US">United States</option>
+					<option value="UM">United States Minor Outlying Islands</option>
+					<option value="UY">Uruguay</option>
+					<option value="UZ">Uzbekistan</option>
+					<option value="VU">Vanuatu</option>
+					<option value="VE">Venezuela</option>
+					<option value="VN">Vietnam</option>
+					<option value="WF">Wallis and Futuna</option>
+					<option value="EH">Western Sahara</option>
+					<option value="YE">Yemen</option>
+					<option value="ZM">Zambia</option>
+					<option value="ZW">Zimbabwe</option>
+					<option value="AX">&#xC5;land Islands</option>
+				</select>
+
+			</fieldset>
+		</form>
+	</div>
+	<br>
+	<div class="container">
+		<h1 id="galerijaSlika">Galerija slika</h1>
+		<div class="blockslike">
+		<figure>
+			<figcaption>Slika1 - Team alpha</figcaption>
+			<img src="https://images.indianexpress.com/2021/05/Call-of-Duty-Warzone.jpg"
+				alt="" width="300" height="300">
+
+		</figure>
+		<figure>
+			<figcaption>Slika2 - Warzone 2.0</figcaption>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTP6qgnc9-cd8aAEczkLUYfeIYwbL4vONBAw&usqp=CAU"
+				alt="" width="300" height="300">
+
+		</figure>
+		<figure>
+			<figcaption>Slika3 - Team beta</figcaption>
+			<img src="https://prod.assets.earlygamecdn.com/images/cod-mobile-play-on-pc.jpg?mtime=1661289816"
+				alt="" width="300" height="300">
+
+		</figure>
+		<figure>
+			<figcaption>Slika4 - COD MW</figcaption>
+			<img src="../Dokumenti/Slike/slika5.jpg" alt="" width="300" height="300">
+		</figure>
+		<figure>
+			<figcaption>Slika5 - Team deathmatch</figcaption>
+			<img src="../Dokumenti/Slike/slika6.jpg" alt="" width="300" height="300">
+
+		</figure>
+		</div>
+	</div>
+	<hr>
+
+	<div class="container-video">
+		<h1 id="galerijaVidea">Galerija videa</h1>
+		<div class="blockvideo">
+		<div>
+		<iframe class="container1" width="560" height="315" src="https://www.youtube.com/embed/C04Oj2yEynY" title="YouTube video player"
+			
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen>
+
+		</iframe>
+		</div>
+		<br>
+		<div>
+		<iframe class="container1" width="560" height="315" src="https://www.youtube.com/embed/laH3FFNkfCg" title="YouTube video player"
+			
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen>
+
+		</iframe>
+		</div>
+		<br>
+		<div>
+		<iframe class="container1" width="560" height="315" src="https://www.youtube.com/embed/cc0piU-rYmY" title="YouTube video player"
+			
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen>
+
+		</iframe>
+		</div>
+		<br>
+		<div>
+		<iframe class="container1" width="560" height="315" src="https://www.youtube.com/embed/Xd9QeRguvDA" title="YouTube video player"
+			
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen>
+
+		</iframe>
+		</div>
+		<br>
+		<video class="container1" width="560" height="315" src="../Dokumenti/multimedija/Video1.mp4" controls></video>
+		</div>
+	</div>
+	<hr>
+	<div>
+		<h1 id="popisProizvoda">Popis proizvoda</h1>
+		<table>
+			<caption>Popis igara</caption>
+			<thead>
+				<tr>
+					<th>Naziv igre</th>
+					<th>Godina izdavanja</th>
+					<th>Developer</th>
+					<th class="prioritet-4">Cijena</th>
+					<th class="prioritet-5">Ocjena</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="neparni">
+					<td>Call of War </td>
+					<td>2003</td>
+					<td>Infinity Ward</td>
+					<td class="prioritet-4">12$</td>
+					<td class="prioritet-5">7/10</td>
+
+				<tr >
+					<td> Call of War 2 </td>
+					<td>2005</td>
+					<td>Infinity Ward</td>
+					<td class="prioritet-4">20$</td>
+					<td class="prioritet-5">7.5/10</td>
+
+				</tr>
+				<tr class="neparni">
+					<td>Call of War 3</td>
+					<td>2006</td>
+					<td>Treyarch</td>
+					<td class="prioritet-4">25$</td>
+					<td class="prioritet-5">9/10</td>
+				</tr>
+				<tr>
+					<td>Call of War 4: Modern Warfare</td>
+					<td>2007</td>
+					<td>Infinity Ward</td>
+					<td class="prioritet-4">27$</td>
+					<td class="prioritet-5">8.5/10</td>
+				</tr>
+				<tr class="neparni">
+					<td>Call of War: Modern Warfare 2</td>
+					<td>2008</td>
+					<td>Treyarch</td>
+					<td class="prioritet-4">32$</td>
+					<td class="prioritet-5">7.5/10</td>
+				</tr>
+				<tr>
+					<td>Call of War: Black Ops</td>
+					<td>2009</td>
+					<td>Infinity Ward</td>
+					<td class="prioritet-4">38$</td>
+					<td class="prioritet-5">9.5/10</td>
+				</tr>
+				<tr class="neparni">
+					<td>Call of War: Modern Warfare 3</td>
+					<td>2010</td>
+					<td>Treyarch </td>
+					<td class="prioritet-4">49$</td>
+					<td class="prioritet-5">10/10</td>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5">Tablica</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<hr>
+
+	<div>
+		<h1 id="interaktivnaSlika">Interaktivna slika</h1>
+		<img src="../Dokumenti/Slike/Slika7.jpg" alt="" usemap="#Interaktivna" width="300" height="300">
+		<map name="Interaktivna">
+			<area shape="circle" coords="150,150,80" href="https://www.callofduty.com/blog" alt="" target="_blank">
+			<area shape="rect" coords="0,0,70,70" href="https://www.callofduty.com/patchnotes" alt=""
+				target="_blank">
+			<area shape="rect" coords="200,0,300,50" href="https://profile.callofduty.com/cod/login" alt=""
+				target="_blank">
+		</map>
+		<p>
+			Prvo područje je krug i nalazi se na sredini interaktivne slike (shape="circle" coords="150, 150, 80") -
+			šalje na Call of War blog stranicu
+			<br>
+			Drugo područje je pravokutnik i nalazi se u lijevom gornjem kutu slike (shape="rect" coords="0, 0, 70, 70,")
+			- šalje na Call of War patch notes stranicu
+			<br>
+			Treće područje je pravokutnik i nalazi se u desnom gornjem kutu slike (shape="rect" coords="200, 0, 300,
+			50")
+			- šalje na Call of War stranicu za prijavu
+
+		</p>
+	</div>
+	<hr>
+	<div>
+		<h1 id="Forum">Forum</h1>
+	</div>
+	<div id="prvaobjava">
+		<h2 class="naslov2">Call of War warzone recenzija</h2>
+		<p class="odlomak">
+			Rat frakcija se nastavlja u svim zonama isključenja, a na vama je hoćete li zauzeti pravo u ovoj naizgled
+			beskrajnoj globalnoj borbi za moć.
+			Sezona 03 za Call of War®: Warzone™ 2.0 savršeno je vrijeme da uđete u DMZ, budući da će iskustvo vidjeti
+			nekoliko novih značajki koje će iz temelja promijeniti način na koji operateri mogu nabaviti zalihe
+			krijumčarene robe, ključeva i druge opreme. Ako ste zainteresirani za način rada s visokim ulozima s
+			mnoštvom stalnih nagrada, ovo sezonsko ažuriranje odlična je ulazna točka ili ponovna ulazna točka s
+			obzirom na nekoliko novih načina za spremanje dragocjenih predmeta, uređivanje Kontrabanda i zaobilaženje
+			ili izvan zona isključenja.
+		</p>
+		
+			<h4 class="naslov2">
+				Ključne riječi
+			</h4>
+			<ul class="nlista">
+				<li>
+					Operator
+				</li>
+				<li>
+					DMZ
+				</li>
+				<li>
+					Oprema
+				</li>
+			</ul>
+		
+		<h4 class="naslov2"> Citat</h4>
+		<p class="citat"><q>Sezona 03 za Call of War®: Warzone™ 2.0 savršeno je vrijeme da uđete u DMZ</q></p>
+		<h4 class="naslov2">Iskustvo(godine igranja)</h4>
+		<p class="broj">5</p>
+	</div>
+
+	<div>
+		<h2>Ricocheat Anti-cheat izvještaj napretka</h2>
+		<p>
+			Od pokretanja, tim RICOCHET Anti-Cheat™ razvija i primjenjuje nove tehnike i tehnologije za borbu protiv
+			nepoštene igre za Modern Warfare II i Warzone 2.0. U izvješću o napretku protiv varanja u sezoni 03 detaljno
+			opisujemo nekoliko novih slojeva sigurnosti i otkrivanja za zaštitu svih načina, s fokusom na rangiranu igru
+			za Modern Warfare II i Warzone 2.0. Neće biti moguće iskorištavanje meta oružja koja su do sada pružala
+			nepravilnosti
+			u igranju.
+		</p>
+		
+			<h4>
+				Ključne riječi
+			</h4>
+			<ul>
+				<li>
+					Warzone
+				</li>
+				<li>
+					Meta
+				</li>
+			</ul>
+		
+		<h4>Citat</h4>
+		<q>Od pokretanja, tim RICOCHET Anti-Cheat™ razvija i primjenjuje nove tehnike i tehnologije za borbu protiv
+			nepoštene igre</q>
+		<h4>Iskustvo(godine igranja)</h4>
+		<p>12</p>
+
+	</div>
+
+	<div>
+		<h2>Sezona 3 - bilješke o zakrpama</h2>
+		<p>
+			Promjene u sezoni 03 dodaju više osjetljivosti na kretanje i fluidnost borbe uključujući smanjenje
+			intenziteta povratnih informacija o šteti (npr. podrhtavanje kamere i HUD slojevi). Također smo smanjili
+			veličinu nekih od kaznenijih nedostataka privitka. Smatramo da će ovo rezultirati proširenjem održivosti
+			dodataka koji će omogućiti širi spektar stilova igre za postizanje vrhunskog uspjeha—uključujući promjenu
+			eksplozivnog streljiva, koje omogućuje snajperskim puškama s kliznim djelovanjem da obore igrače jednim
+			udarcem. Dok ulazimo u sezonu 03 Reloaded, pomno ćemo paziti na oružje, opremu, nizove ubojstava—među
+			ostalim mehanikama, kako bismo osigurali fer, zabavno i strateški bogato igranje. Izbalansirane su
+			drastične razlike u puškama kako meta puške nebi prevladavale serverima kao do sada.
+		</p>
+		
+			<h4>
+				Ključne riječi
+			</h4>
+			<ul>
+				<li>
+					Puške
+				</li>
+				<li>
+					Meta
+				</li>
+			</ul>
+		
+		<h4>Citat</h4>
+		<q>Promjene u sezoni 03 dodaju više osjetljivosti na kretanje i fluidnost borbe uključujući smanjenje
+			intenziteta povratnih informacija o šteti</q>
+		<h4>Iskustvo(godine igranja)</h4>
+		<p>2</p>
+
+	</div>
+
+	<div>
+		<h2>Call of War vodić</h2>
+		<p>
+			Plan: Toplo preporučujemo igranje Resurgence modova, budući da mogućnost ponovnog stvaranja tijekom meča
+			omogućuje određenu fleksibilnost, posebno kada igrate s kolegama iz ekipe.
+
+			Međutim, ako ste upoznati s igrama Battle Royale, Warzone 2.0 sezona 03 također ima tradicionalno iskustvo.
+			Bez obzira na način koji odaberete, dostupan vam je vodič u igri koji će vas voditi kroz prvih nekoliko
+			utakmica.
+		</p>
+		
+			<h4>
+				Ključne riječi
+			</h4>
+			<ul>
+				<li>
+					Barrle Royale
+				</li>
+				<li>
+					Warzone
+				</li>
+			</ul>
+	
+		<h4>Citat</h4>
+		<q>Toplo preporučujemo igranje Resurgence modova</q>
+		<h4>Iskustvo(godine igranja)</h4>
+		<p>6</p>
+
+	</div>
+
+	<div>
+		<h2>Call of War S3 Battle pass</h2>
+		<p>
+			Nova borbena propusnica za sezonu 03 sadrži više od 100 nagrada u 22 sektora, uključujući dvije nove
+			funkcionalne puške i dodavanje operatora Valerije Garze i Alejandra Vargasa iz kampanje Modern Warfare® II.
+
+			Nadogradite na puni Battle Pass za 1.100 COD bodova za pristup svim uobičajenim predmetima Battle Pass-a u
+			sezoni 03 ili kupite BlackCell, potpuno novu ponudu Battle Pass-a za dodatni sektor, čime se ukupan broj
+			povećava na 23, kao i dodatna zarada Preskakanje razine bojnog žetona. Više detalja potražite u nastavku!
+		</p>
+		
+			
+		<h4>Ključne riječi</h4> 
+			
+			<ul>
+				<li>
+					Battle Pass
+				</li>
+				<li>
+					Puške
+				</li>
+				<li>
+					Operator
+				</li>
+			</ul>
+		
+		<h4>Citat</h4>
+		<q>Toplo preporučujemo igranje Resurgence modova</q>
+		<h4>Iskustvo(godine igranja)</h4>
+		<p>6</p>
+
+	</div>
+
+
+
+
+<br>
+<footer>
+	<a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img alt="Creative Commons License"
+		src="https://i.creativecommons.org/l/by/2.0/80x15.png">
+	</a>
+	&copy; Tome Trnjanac 2023
+	<img src="../Dokumenti/Slike/HTML5.png" alt="" width="50" height="50">
+
+</footer>
+</body>
+</html>
